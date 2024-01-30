@@ -7,18 +7,18 @@
     <title>Lift Simulation | Abin John</title>
   </head>
   <body>
-    <header>
-      <h1>Lift Simulation</h1>
-      <p>Enter number of floors and lifts to proceed to the simulation</p>
-    </header>
-    <section id="form-container">
+    <section class="section-container" id="container-0">
+      <header>
+        <h1>Lift Simulation</h1>
+        <p>Enter number of floors and lifts to proceed to the simulation</p>
+      </header>
       <form class="flex form" id="form">
         <label id="num-floors"
-          ><small>Number of floors</small><input type="number" min="1" />
+          ><small>Number of floors</small><input type="number" />
           <small class="error-msg"></small
         ></label>
         <label id="num-lifts"
-          ><small>Number of lifts</small><input type="number" min="1" />
+          ><small>Number of lifts</small><input type="number" />
           <small class="error-msg"></small>
         </label>
         <button type="submit">Proceed &rarr;</button>
