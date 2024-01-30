@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+/* ------------------------ */
+/* Global overrides */
+/* ------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Raleway', sans-serif;
+  background-color: #f8fafc;
+  color: #020617;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  width: 100%;
+  padding: 2.4rem;
+}
+
+/* ------------------------ */
+/* Helpers */
+/* ------------------------ */
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ------------------------ */
+/* Styles */
+/* ------------------------ */
+header {
+  padding: 0 2.4rem;
+  text-align: center;
+}
+
+.form {
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 42rem;
+  border: 1px solid #e2e8f0;
+  padding: 1.2rem;
+  border-radius: 4px;
+}
+
+.form>label {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.4rem;
+}
+
+.form>label.error>input {
+  border: 1px solid #ef4444;
+}
+
+.form input {
+  border-radius: 4px;
+  padding: 0.4rem 0.8rem;
+  outline: none;
+  border: 1px solid #e2e8f0;
+  background-color: #f8fafc;
+}
+
+.form input:focus,
+.form input:hover {
+  border-color: #94a3b8;
+}
+
+.form .error-msg {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #ef4444;
+}
+
+.form button {
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  border-radius: 4px;
+  outline: none;
+  background-color: #d97706;
+  border: 1px solid #fbbf24;
+  color: #fffbeb;
+}

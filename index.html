@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles/styles.css" rel="stylesheet" />
+    <title>Lift Simulation | Abin John</title>
+  </head>
+  <body>
+    <header>
+      <h1>Lift Simulation</h1>
+      <p>Enter number of floors and lifts to proceed to the simulation</p>
+    </header>
+    <section id="form-container">
+      <form class="flex form" id="form">
+        <label id="num-floors"
+          ><small>Number of floors</small><input type="number" min="1" />
+          <small class="error-msg"></small
+        ></label>
+        <label id="num-lifts"
+          ><small>Number of lifts</small><input type="number" min="1" />
+          <small class="error-msg"></small>
+        </label>
+        <button type="submit">Proceed &rarr;</button>
+      </form>
+    </section>
+    <script src="./src/index.js" type="module"></script>
+  </body>
+</html>
